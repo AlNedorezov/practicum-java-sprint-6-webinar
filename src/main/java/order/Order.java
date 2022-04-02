@@ -8,18 +8,12 @@ public class Order {
     Date createdAt;
     List<Item> items;
     long price;
-    double weight;
 
-    public Order(List<Item> items, long price, double weight) {
+    public Order(List<Item> items, long price) {
         this.id = null;
         this.createdAt = new Date();
         this.items = items;
         this.price = price;
-        this.weight = weight;
-    }
-
-    public double getWeight() {
-        return weight;
     }
 
     public Long getId() {
